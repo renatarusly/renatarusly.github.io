@@ -38,7 +38,8 @@ function setNavOpen(isOpen) {
 }
 
 if (navToggle && nav) {
-  navToggle.addEventListener('click', () => {
+  navToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = document.body.classList.contains('nav-open');
     setNavOpen(!isOpen);
   });
@@ -67,6 +68,9 @@ const hero = document.querySelector('.home');
 const cards = document.querySelectorAll('.hero-card');
 
 if (hero && cards.length) {
+  const sideCard = hero.querySelector('.hero-card-side');
+  const baseRotate = sideCard ? ' rotate(-4deg)' : '';
+
   hero.addEventListener('mousemove', (e) => {
     const { innerWidth, innerHeight } = window;
     const x = (e.clientX / innerWidth - 0.5) * 12;
@@ -74,13 +78,14 @@ if (hero && cards.length) {
 
     cards.forEach((card, index) => {
       const intensity = (index + 1) * 0.4;
-      card.style.transform = `translate(${x * intensity}px, ${y * intensity}px)`;
+      const tx = `translate(${x * intensity}px, ${y * intensity}px)`;
+      card.style.transform = card === sideCard ? tx + baseRotate : tx;
     });
   });
 
   hero.addEventListener('mouseleave', () => {
     cards.forEach((card) => {
-      card.style.transform = 'translate(0, 0)';
+      card.style.transform = card === sideCard ? 'translate(0, 0) rotate(-4deg)' : 'translate(0, 0)';
     });
   });
 }
