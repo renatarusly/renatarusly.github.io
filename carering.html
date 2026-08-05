@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARERING | Case Study — Renata Rusly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="navbar">
+    <div class="logo">RENATA RUSLY</div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="index.html#connect">Let's Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="case-shell">
+    <section class="case-hero">
+      <div class="case-hero-grid">
+        <p class="eyebrow">Case study • Mobile app • HuddleHive Women in Tech Hackathon 2026</p>
+        <h1>CARERING</h1>
+        <p class="subtitle">
+          CareRing is an AI-powered eldercare companion app built at HuddleHive Women in Tech Hackathon 2026.
+          It uses Twilio and Gemini AI to place daily check-in calls to elderly parents and alert family if
+          something seems off.
+        </p>
+        <a class="btn ghost back-home" href="index.html#works">← Back to works</a>
+        <div class="case-hero-visual">
+          <div class="case-graphic" style="max-width: 420px; margin: 0 auto;">
+            <img src="MEDIA/CARERING/0.png" alt="CARERING screen" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-grid">
+
+      <!-- 01 Overview -->
+      <div class="case-card">
+        <p class="case-step">01</p>
+        <h2>Overview</h2>
+        <div class="case-meta">
+          <div class="meta-item">
+            <div class="meta-label">Role</div>
+            <div class="meta-value">UI/UX Product Designer</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Focus</div>
+            <div class="meta-value">User research · Interaction · Prototyping &amp; testing · Pitching</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Outcome</div>
+            <div class="meta-value">Functional MVP prototype delivered in 48 hours</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Background -->
+      <div class="case-card callout-problem">
+        <p class="case-step">02</p>
+        <h2>Background</h2>
+        <p>
+          Many adults with 9–5 jobs struggle to consistently check in on elderly parents living alone.
+          Calling every day feels intrusive, but not calling feels neglectful — and seniors often won't reach
+          out even when struggling. This creates a gap: family wants to care, but life gets in the way.
+        </p>
+        <p>The scale of this is growing — yet the emotional gap remains:</p>
+        <div class="research-stats">
+          <div class="stat-card">
+            <div class="stat-number">7.8M <span class="stat-arrow">→</span> 9.6M</div>
+            <p class="stat-label">Working adults caring for an elderly parent, 2011–2023</p>
+            <p class="stat-source">Patterson et al., University of Michigan, 2025</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1 in 3</div>
+            <p class="stat-label">Older adults who still report feeling lonely or isolated</p>
+            <p class="stat-source">University of Michigan National Poll on Healthy Aging, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 Understanding the problem -->
+      <div class="case-card">
+        <p class="case-step">03</p>
+        <h2>Understanding the problem</h2>
+        <div class="phase-track">
+          <span class="phase-pill active">Empathize</span>
+          <span class="phase-arrow">→</span>
+          <span class="phase-pill active">Define</span>
+          <span class="phase-arrow">→</span>
+          <span class="phase-pill">Ideate</span>
+        </div>
+        <p class="phase-kicker">Empathize</p>
+        <p>
+          Due to the 48-hour time constraint, research was conducted through desk research and team
+          brainstorming. We identified two core users and their emotional reality:
+        </p>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <div class="persona-avatar">E</div>
+            <div class="persona-info">
+              <h3>Elder</h3>
+              <blockquote>Needs connection, not surveillance.</blockquote>
+              <p>Wants to feel independent — not monitored or managed.</p>
+            </div>
+          </div>
+          <div class="persona-card">
+            <div class="persona-avatar">C</div>
+            <div class="persona-info">
+              <h3>Caretaker</h3>
+              <blockquote>Needs peace of mind, not more tasks.</blockquote>
+              <p>Wants a simple way to know "they're okay" without adding to an already full day.</p>
+            </div>
+          </div>
+        </div>
+        <p class="phase-kicker">Define</p>
+        <p>
+          <strong>Problem statement:</strong> working adults struggle with caregiving consistency — calling
+          every day feels intrusive, but not calling feels neglectful. Elderly parents often won't ask for
+          help even when struggling.
+        </p>
+        <blockquote class="case-pullquote">Core design principle: the app should feel like care, not monitoring.</blockquote>
+      </div>
+
+      <!-- 04 System flow -->
+      <div class="case-card">
+        <p class="case-step">04</p>
+        <h2>System flow</h2>
+        <div class="phase-track">
+          <span class="phase-pill">Empathize</span>
+          <span class="phase-arrow">→</span>
+          <span class="phase-pill">Define</span>
+          <span class="phase-arrow">→</span>
+          <span class="phase-pill active">Ideate</span>
+        </div>
+        <p>We mapped the end-to-end system flow before touching any screens:</p>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <span class="flow-step-num">1</span>
+            <p><strong>AI calls the elder</strong> — a scheduled check-in call goes out.</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-step-num">2</span>
+            <p><strong>Gemini handles the conversation</strong> — a natural, low-pressure chat, not a script.</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-step-num">3</span>
+            <p><strong>Sentiment is analysed</strong> — the conversation is read for tone and cause for concern.</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-step-num">4</span>
+            <p><strong>Twilio sends a summary + alert to the caretaker</strong> — a digest, not a transcript.</p>
+          </div>
+        </div>
+
+        <p>
+          Then we defined the tab structure for both sides and worked out the elder–caretaker pairing
+          mechanism:
+        </p>
+        <div class="tab-diagram">
+          <div class="tab-group">
+            <h4 class="tab-group-title">Caretaker tabs</h4>
+            <span class="tab-pill">AI Call Settings</span>
+            <span class="tab-pill">Reminder</span>
+            <span class="tab-pill">Summary</span>
+          </div>
+          <div class="tab-group">
+            <h4 class="tab-group-title">Elder tabs</h4>
+            <span class="tab-pill">AI Call Settings</span>
+            <span class="tab-pill">Reminder</span>
+          </div>
+        </div>
+        <ul class="case-list">
+          <li>AI handles routine check-ins so caretakers aren't burdened daily.</li>
+          <li>Caretaker gets a digest, not a transcript — summary only.</li>
+          <li>Elder flow must be minimal — as few screens and taps as possible.</li>
+        </ul>
+
+        <div class="slideshow" data-slideshow>
+          <div class="slideshow-viewport">
+            <div class="slideshow-track">
+              <div class="slide is-active" data-caption="<b>Our whiteboard A.K.A. messy brainstorm of the full system</b> — problem statement, dual-user roles (elder vs caretaker), AI call flow via Twilio, and the 3-page structure for the caretaker home.">
+                <div class="case-graphic">
+                  <img src="MEDIA/CARERING/Whiteboard.jpg" alt="Whiteboard brainstorm of the CareRing system" />
+                </div>
+              </div>
+              <div class="slide" data-caption="<b>Onboarding pairing flow</b> — user selects Elder or Caretaker, caretaker inputs the elder's unique code, elder generates a random code to share.">
+                <div class="case-graphic">
+                  <img src="MEDIA/CARERING/Onboarding%20Pairing%20Flow.jpg" alt="Whiteboard detail: elder/caretaker pairing logic" />
+                </div>
+              </div>
+              <div class="slide" data-caption="<b>Detailed breakdown of the 3 caretaker tabs</b> — AI call settings (topics, frequency, time), human call reminder, and call summary in bullet points.">
+                <div class="case-graphic">
+                  <img src="MEDIA/CARERING/Detailed%20caretaker%20tabs.jpg" alt="Whiteboard detail: AI call settings and summary notes" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="slideshow-nav slideshow-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="slideshow-nav slideshow-next" aria-label="Next slide">›</button>
+          <p class="slideshow-caption"></p>
+          <div class="slideshow-dots"></div>
+        </div>
+      </div>
+
+      <!-- 05 Low-fi -->
+      <div class="case-card">
+        <p class="case-step">05</p>
+        <h2>Low-fi sketches</h2>
+        <div class="text-media-split">
+          <div>
+            <p>Sketched out before any design tool was opened:</p>
+            <ul class="case-list">
+              <li><strong>P1</strong> — Welcome screen (Who are you? Elder / Caretaker)</li>
+              <li><strong>P2 — Caretaker</strong> — input elder's code to pair</li>
+              <li><strong>P2 — Elder</strong> — unique code display + generate new code</li>
+              <li><strong>Home (Caretaker)</strong> — 3 permanent tabs confirmed: AI Call Settings, Reminder, Summary</li>
+            </ul>
+            <p>This lo-fi step kept the whole team aligned on structure before anyone started building or designing.</p>
+          </div>
+          <div class="case-graphic lowfi-shot">
+            <img src="MEDIA/CARERING/Lowfi-crop.jpg" alt="Paper sketches of the welcome, pairing, and home screens" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 Design decisions -->
+      <div class="case-card">
+        <p class="case-step">06</p>
+        <h2>Design decisions</h2>
+        <p>Four decisions that shaped the interface, each paired with the screen it produced:</p>
+
+        <div class="decision-grid">
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">1. Color system (status indicators)</div>
+              <div class="color-palette">
+                <div class="color-chip">
+                  <span class="color-swatch" style="background:#4CAF50"></span>
+                  <span class="color-hex">Green — completed</span>
+                </div>
+                <div class="color-chip">
+                  <span class="color-swatch" style="background:#F2B705"></span>
+                  <span class="color-hex">Yellow — upcoming</span>
+                </div>
+                <div class="color-chip">
+                  <span class="color-swatch" style="background:#F95738"></span>
+                  <span class="color-hex">Red — no response / urgent</span>
+                </div>
+              </div>
+              <p>Color was used intentionally so caretakers can read the elder's call status at a glance without reading any text.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%201-%20ELDER.png" alt="Elder home tab — color-coded call status" /></div>
+                <figcaption>Past &amp; upcoming calls</figcaption>
+              </figure>
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%203%20-%20CARETAKER.png" alt="Caretaker summary — no response, urgent alert" /></div>
+                <figcaption>No response</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">2. Custom call schedule</div>
+              <p>Added a toggle to set different reminder times per day, because a caretaker's availability varies across the week — one fixed time doesn't reflect real 9–5 schedules.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%201%20-%20CARETAKER.png" alt="Caretaker AI Call Settings tab" /></div>
+                <figcaption>Settings tab</figcaption>
+              </figure>
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%202%20-%20CARETAKER.png" alt="Reminder screen — custom call schedule off" /></div>
+                <figcaption>Off</figcaption>
+              </figure>
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%202%20-%20CARETAKER-1.png" alt="Reminder screen — custom call schedule on, per-day times" /></div>
+                <figcaption>On</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">3. Unique code pairing</div>
+              <p>Elder generates a code, caretaker inputs it to connect. Avoids manual account linking, which adds friction — simple enough for elderly users with minimal tech experience.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/ONBOARDING%20-%20ELDER.png" alt="Elder onboarding — unique code to share" /></div>
+                <figcaption>Elder generates code</figcaption>
+              </figure>
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/ONBOARDING%20-%20CARETAKER.png" alt="Caretaker onboarding — enter elder's code to connect" /></div>
+                <figcaption>Caretaker enters code</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">4. Alert vs. Notify</div>
+              <p>Alert (red, filled) = urgent, something's wrong. Notify (outline) = gentle nudge. Alert is visually dominant so elders and caretakers can immediately identify the most critical action, especially for users who may not be confident with technology.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot">
+                <div class="case-graphic case-graphic-phone"><img src="MEDIA/CARERING/FRAMES/TABS%201-%20ELDER-1.png" alt="Elder Need Help screen — Alert vs Notify" /></div>
+                <figcaption>Alert vs Notify buttons</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 Iterations -->
+      <div class="case-card">
+        <p class="case-step">07</p>
+        <h2>Design iteration</h2>
+        <p>Two rounds of iteration that made the interface feel lighter and faster to scan:</p>
+
+        <div class="iteration-groups">
+          <div class="iteration-group">
+            <h3 class="iteration-title">Iteration 1 — Tab structure</h3>
+            <div class="iteration-grid">
+              <div class="iteration-card iteration-before">
+                <span class="iteration-label">Before</span>
+                <p>The active tab used a filled background, which felt visually heavy and pulled focus toward navigation instead of content.</p>
+                <div class="iteration-visuals">
+                  <div class="case-graphic case-graphic-phone">
+                    <img src="MEDIA/CARERING/FRAMES/TABS 1 - CARETAKER-1.png" alt="Before: Tab Structure" />
+                  </div>
+                </div>
+              </div>
+              <div class="iteration-card iteration-after">
+                <span class="iteration-label">After</span>
+                <p>Removed the filled background on the active tab indicator. The floating style feels lighter and less visually heavy, keeping focus on the content rather than the navigation.</p>
+                <div class="iteration-visuals">
+                  <div class="case-graphic case-graphic-phone">
+                    <img src="MEDIA/CARERING/FRAMES/TABS 1 - CARETAKER.png" alt="After: Tab Structure" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="iteration-group">
+            <h3 class="iteration-title">Iteration 2 — Call summary</h3>
+            <div class="iteration-grid">
+              <div class="iteration-card iteration-before">
+                <span class="iteration-label">Before</span>
+                <p>A paragraph summary forced caretakers to read everything to find what matters.</p>
+                <div class="iteration-visuals">
+                  <div class="case-graphic case-graphic-phone">
+                    <img src="MEDIA/CARERING/FRAMES/TABS 3 - CARETAKER-2.png" alt="Before: Tab Structure" />
+                  </div>
+                </div>
+              </div>
+              <div class="iteration-card iteration-after">
+                <span class="iteration-label">After</span>
+                <p>Switched to bullet points so caretakers can spot key info in seconds — critical when checking in during a busy workday.</p>
+                <div class="iteration-visuals">
+                  <div class="case-graphic case-graphic-phone">
+                    <img src="MEDIA/CARERING/FRAMES/TABS 3 - CARETAKER.png" alt="After: Tab Structure" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 Results -->
+      <div class="case-card callout-success">
+        <p class="case-step">08</p>
+        <h2>Results &amp; takeaways</h2>
+        <div class="text-media-split reverse">
+          <div class="case-graphic case-graphic-video-portrait lowfi-shot">
+            <video src="MEDIA/VIDEO/CARERING.mov" controls preload="metadata" playsinline></video>
+          </div>
+          <div>
+            <p>
+              Delivered a functional MVP prototype within 48 hours across 3 rounds of design testing. The
+              backend–frontend connection didn't fully work during the hackathon, but the core AI call flow and
+              dual-user design system were fully prototyped.
+            </p>
+            <ul class="case-list">
+              <li><strong>Emoji in UI isn't elder- or caretaker-friendly</strong> — rebuilt the interface post-hackathon with clearer iconography and visual hierarchy.</li>
+              <li><strong>Backend–frontend integration needs to be scoped and tested earlier</strong> in a time-constrained sprint.</li>
+              <li><strong>The problem space felt real and meaningful</strong> — eldercare and working-adult burnout was worth building for.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 09 Reflection -->
+      <div class="case-card">
+        <p class="case-step">09</p>
+        <h2>Reflection &amp; future improvements</h2>
+        <p>
+          In hindsight, design and dev alignment from hour one would have changed the outcome. I also
+          underestimated how much extra thought designing for elderly users requires — accessibility isn't
+          an afterthought, it's the whole point.
+        </p>
+        <p>If I built this again:</p>
+        <ul class="case-list">
+          <li>Proper user interviews with actual elderly users and working adults.</li>
+          <li>Accessibility testing — larger touch targets, simpler language, higher contrast.</li>
+          <li>Fix the backend–frontend connection so the full AI call flow works end to end.</li>
+          <li>Family group feature — multiple caretakers receive alerts, not just one.</li>
+        </ul>
+      </div>
+
+      <div class="case-card">
+        <h2>More projects</h2>
+        <div class="next-projects">
+          <a class="next-project-card" href="mood2go.html">
+            <span class="next-project-label">01 • Product Design</span>
+            <span class="next-project-title">MOOD2GO</span>
+            <span class="next-project-blurb">A mood + vibe + radius flow that turns indecision into quick, playful discovery.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+          <a class="next-project-card" href="sikkut.html">
+            <span class="next-project-label">02 • Platform Design</span>
+            <span class="next-project-title">SIKKUT</span>
+            <span class="next-project-blurb">A unified portal that integrates wellness programs under one navigation system and consistent UI.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Renata Rusly — Designed with curiosity, color, and care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

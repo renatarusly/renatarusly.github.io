@@ -70,6 +70,11 @@
     </div>
 
     <div class="about-grid">
+      <div class="about-photo">
+        <img src="MEDIA/ABOUT%20ME/MY%20PICTURE.jpeg" alt="Renata Rusly" />
+        <span class="about-photo-badge" hidden>🇮🇩 Jakarta → 🇬🇧 London</span>
+      </div>
+      <div class="about-content">
       <div class="about-text">
         <p>
           Born and raised in Jakarta, Indonesia 🇮🇩, now studying Computer Science with 
@@ -86,19 +91,20 @@
         <div class="pill-card">
           <span class="pill-label">What I care about</span>
           <ul>
-            <li>Clarity over clutter</li>
-            <li>Friendly, honest interfaces</li>
-            <li>Design backed by real people’s stories</li>
+            <li><span class="pill-icon">🎯</span> Clarity over clutter</li>
+            <li><span class="pill-icon">💛</span> Friendly, honest interfaces</li>
+            <li><span class="pill-icon">📖</span> Design backed by real people’s stories</li>
           </ul>
         </div>
         <div class="pill-card">
           <span class="pill-label">Tools I enjoy</span>
           <ul>
-            <li>Figma & FigJam</li>
-            <li>Procreate & traditional sketching</li>
-            <li>Notion, Miro, a lot of sticky notes</li>
+            <li><span class="pill-icon">🎨</span> Figma & FigJam</li>
+            <li><span class="pill-icon">✏️</span> Procreate & traditional sketching</li>
+            <li><span class="pill-icon">📌</span> Notion, Miro, a lot of sticky notes</li>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -112,9 +118,8 @@
     <div class="works-grid">
       <!-- EDIT: Project 1 - MOOD2GO -->
       <article class="project-card">
-        <!-- GRAPHIC: Add project thumbnail - replace div below with <img src="assets/mood2go-thumb.jpg" alt="MOOD2GO" /> -->
         <div class="project-thumb">
-          <span class="project-thumb-placeholder">Add project image (e.g. assets/mood2go-thumb.jpg)</span>
+          <img src="MEDIA/MOOD2GO/0.png" alt="MOOD2GO THUMB" />
         </div>
         <div class="project-label">01 • Product Design</div>
         <h3><a class="project-link" href="mood2go.html">MOOD2GO</a></h3>
@@ -133,36 +138,13 @@
         <a class="case-cta" href="mood2go.html">Read case study →</a>
       </article>
 
-      <!-- EDIT: Project 2 - ACADEME -->
+      <!-- EDIT: Project 2 - SIKKUT -->
       <article class="project-card">
         <!-- GRAPHIC: Add project thumbnail -->
         <div class="project-thumb">
-          <span class="project-thumb-placeholder">Add project image (e.g. assets/academe-thumb.jpg)</span>
+          <img src="MEDIA/SIKKUT/0.png" alt="SIKKUT THUMB"/>
         </div>
-        <div class="project-label">02 • UX & Strategy</div>
-        <h3><a class="project-link" href="academe.html">ACADEME</a></h3>
-        <p class="project-problem">
-          <strong>Problem:</strong> Students and parents face overwhelming, scattered information when choosing universities.
-        </p>
-        <p class="project-decision">
-          <strong>Design decision:</strong> A comparison-first structure that surfaces credible information, scholarships, and facilities.
-        </p>
-        <p class="project-rationale">
-          <strong>Why:</strong> Research indicated users value clarity and trust; structured listings reduce cognitive load and uncertainty.
-        </p>
-        <div class="project-tags">
-          <span>Information Architecture</span><span>UI Design</span><span>Content Strategy</span>
-        </div>
-        <a class="case-cta" href="academe.html">Read case study →</a>
-      </article>
-
-      <!-- EDIT: Project 3 - SIKKUT -->
-      <article class="project-card">
-        <!-- GRAPHIC: Add project thumbnail -->
-        <div class="project-thumb">
-          <span class="project-thumb-placeholder">Add project image (e.g. assets/sikkut-thumb.jpg)</span>
-        </div>
-        <div class="project-label">03 • Platform Design</div>
+        <div class="project-label">02 • Platform Design</div>
         <h3><a class="project-link" href="sikkut.html">SIKKUT</a></h3>
         <p class="project-problem">
           <strong>Problem:</strong> Employee wellness programs were fragmented and hard to navigate, reducing engagement.
@@ -178,6 +160,28 @@
         </div>
         <a class="case-cta" href="sikkut.html">Read case study →</a>
       </article>
+
+      <!-- EDIT: Project 3 - CARERING -->
+      <article class="project-card">
+        <div class="project-thumb">
+           <img src="MEDIA/CARERING/0.png" alt="CARERING THUMB" />
+        </div>
+        <div class="project-label">03 • AI Product Design</div>
+        <h3><a class="project-link" href="carering.html">CARERING</a></h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Working adults struggle to consistently check in on elderly parents — daily calls feel intrusive, but silence feels neglectful.
+        </p>
+        <p class="project-decision">
+          <strong>Design decision:</strong> An AI eldercare companion that places daily check-in calls and sends caretakers a digest, not a transcript.
+        </p>
+        <p class="project-rationale">
+          <strong>Why:</strong> Elders need connection, not surveillance; caretakers need peace of mind, not more tasks.
+        </p>
+        <div class="project-tags">
+          <span>User Research</span><span>Interaction Design</span><span>Prototyping</span>
+        </div>
+        <a class="case-cta" href="carering.html">Read case study →</a>
+      </article>
     </div>
   </section>
 
@@ -191,28 +195,45 @@
       I’d love to hear from you.
     </p>
 
+    <p class="form-status" id="form-status" hidden role="status"></p>
+
     <div class="connect-grid">
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/hi.renatarusly@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New message from your portfolio site" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://renatarusly.github.io/?sent=1#connect" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
-        <p class="contact-hint">This form is just a prototype – feel free to email me directly too.</p>
+        <p class="contact-hint">Messages go straight to my inbox. You can also email me directly below.</p>
       </form>
 
       <!-- EDIT: Update your contact links below -->
       <div class="contact-info-card">
         <p class="contact-label">Prefer direct contact?</p>
-        <p class="contact-item"><span>Email</span> <a class="inline-link" href="mailto:renata@example.com">renata@example.com</a></p>
-        <p class="contact-item"><span>LinkedIn</span> <a class="inline-link" href="https://linkedin.com/in/renatarusly" target="_blank" rel="noreferrer">linkedin.com/in/renatarusly</a></p>
-        <p class="contact-item"><span>Instagram</span> <a class="inline-link" href="https://instagram.com/renatarusly" target="_blank" rel="noreferrer">@renatarusly</a></p>
+        <div class="contact-icons">
+          <a class="contact-icon" href="mailto:hi.renatarusly@gmail.com" aria-label="Email hi.renatarusly@gmail.com" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a class="contact-icon" href="https://linkedin.com/in/renatarusly" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a class="contact-icon" href="https://instagram.com/renatarusly" target="_blank" rel="noreferrer" aria-label="Instagram @renatarusly" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- EDIT: Footer year and tagline -->
   <footer>
-    <p>© 2024 Renata Rusly — Designed with curiosity, color, and care.</p>
+    <p>© 2026 Renata Rusly — Designed with curiosity, color, and care.</p>
   </footer>
 
   <script src="script.js"></script>

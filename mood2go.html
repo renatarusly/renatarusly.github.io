@@ -31,124 +31,386 @@
 
   <main class="case-shell">
     <section class="case-hero">
-      <p class="eyebrow">Case study • Mobile app</p>
-      <h1>MOOD2GO</h1>
-      <p class="subtitle">
-        A mood-based place recommendation app that turns “Where should we go?” into a fast, guided decision.
-        Built for the Google Maps Platform Hackathon (AI + Travel).
-      </p>
-      <!-- GRAPHIC: Hero/cover - add <img src="assets/..." alt="..." /> inside -->
-      <div class="case-graphic case-graphic-wide" style="margin-top: 1.5rem;">
-        <span class="case-graphic-placeholder">Add hero image (e.g. app mockup, splash screen)</span>
+      <div class="case-hero-grid">
+        <p class="eyebrow">Case study • Mobile app • Google Maps Hackathon</p>
+        <h1>MOOD2GO</h1>
+        <p class="subtitle">
+          A mobile app that helps people decide where to go based on mood, vibe, and distance.
+          Submitted to the Google Maps Platform Hackathon (AI + Travel), exploring how playful design
+          and API integration can turn everyday indecision into mood-matched adventures.
+        </p>
+        <a class="btn ghost back-home" href="index.html#works">← Back to works</a>
+        <div class="case-hero-visual">
+          <div class="case-graphic" style="max-width: 420px; margin: 0 auto;">
+            <img src="MEDIA/MOOD2GO/0.png" alt="Mood2Go landing screen" />
+          </div>
+        </div>
       </div>
-      <a class="btn ghost back-home" href="index.html#works">← Back to works</a>
     </section>
 
     <section class="case-grid">
+
+      <!-- 01 Overview -->
       <div class="case-card">
+        <p class="case-step">01</p>
         <h2>Overview</h2>
         <div class="case-meta">
           <div class="meta-item">
             <div class="meta-label">Role</div>
-            <div class="meta-value">UI/UX Product Designer • Back-end Contributor</div>
+            <div class="meta-value">UI/UX Product Designer &amp; Backend Contributor</div>
           </div>
           <div class="meta-item">
             <div class="meta-label">Focus</div>
-            <div class="meta-value">User research • Interaction • Visual design • Testing</div>
+            <div class="meta-value">User research · Interaction · Visual design · Prototyping &amp; testing · Pitching</div>
           </div>
           <div class="meta-item">
             <div class="meta-label">Outcome</div>
-            <div class="meta-value">Working prototype + API integration + final pitch</div>
+            <div class="meta-value">Working prototype with API integration + final video pitch</div>
           </div>
         </div>
       </div>
 
-      <div class="case-card callout-problem">
-        <h2>Problem</h2>
-        <p>
-          People want to go out, but end up stuck in long group debates—then choose the same familiar places
-          to avoid conflict. The result is time wasted, decision fatigue, and less discovery.
-        </p>
+      <!-- 02 Background -->
+      <div class="case-card callout-quote">
+        <p class="case-step">02</p>
+        <h2>Background</h2>
+        <div class="background-layout">
+          <div class="background-copy">
+            <p>
+              Mood2Go was born from a familiar dilemma: you want to go out, but have no idea where to go.
+              Plans stall, ideas run dry, and you end up visiting the same places again and again.
+            </p>
+            <p>
+              We saw this as an opportunity to transform indecision into discovery. By combining
+              <strong>mood</strong>, <strong>vibe</strong>, and <strong>distance</strong>, Mood2Go creates
+              personalized recommendations that feel right in the moment—not just logically correct.
+            </p>
+          </div>
+          <div class="mood-chat-mock">
+            <div class="mood-chat-header">
+              <span class="mood-chat-flower" aria-hidden="true">✿</span>
+            </div>
+            <div class="mood-chat-body">
+              <span class="chat-bubble chat-bubble-dark">So… where should we go tonight?</span>
+              <span class="chat-bubble chat-bubble-blue">idk, the usual cafe?</span>
+              <span class="chat-bubble chat-bubble-dark">uhm… starting to get bored with it</span>
+              <span class="chat-bubble chat-bubble-dark chat-typing" aria-hidden="true">
+                <span class="chat-typing-dots"><span></span><span></span><span></span></span>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="case-card">
-        <h2>Research insights</h2>
-        <p>From casual observation across 10 outings with friends, I saw the same friction points repeat:</p>
-        <!-- GRAPHIC: Add research visuals (e.g. journey map, insight diagram) -->
-        <div class="case-graphic">
-          <span class="case-graphic-placeholder">Add graphic (e.g. user journey, research synthesis)</span>
-        </div>
-        <ul>
-          <li>Indecision dominated planning: most groups debated for 15–20 minutes.</li>
-          <li>Repetitive destinations: 7 out of 10 groups ended up at the same spots.</li>
-          <li>Relief when suggestions arrived quickly: a fitting option often ended the debate instantly.</li>
+      <!-- 03 Understanding the Problem -->
+      <div class="case-card callout-problem">
+        <p class="case-step">03</p>
+        <h2>Understanding the problem</h2>
+        <p>
+          Through casual observation of 10 outings with friends, we noticed recurring frustrations:
+        </p>
+        <ul class="case-list">
+          <li><strong>Indecision dominates planning</strong> — most groups spent 15–20 minutes debating where to go.</li>
+          <li><strong>Repetitive destinations</strong> — 7 out of 10 groups ended up in the same familiar spots.</li>
+          <li><strong>Time wasted</strong> — in some outings, plans were delayed or even cancelled because agreement wasn’t reached.</li>
+          <li><strong>Relief when suggestions came quickly</strong> — whenever someone proposed a fitting idea fast, the whole group followed.</li>
         </ul>
       </div>
 
+      <!-- 04 User Personas -->
       <div class="case-card">
-        <h2>Solution</h2>
-        <p>
-          Mood2Go recommends places based on three inputs—mood, vibe, and distance—so users can choose
-          quickly without scanning endless lists.
-        </p>
-        <!-- GRAPHIC: Add solution visuals (e.g. app screens, flow diagram) -->
-        <div class="case-graphic case-graphic-wide">
-          <span class="case-graphic-placeholder">Add graphic (e.g. app screens, key flow)</span>
+        <p class="case-step">04</p>
+        <h2>Who we designed for</h2>
+        <p>We identified two key user types who represent different decision-making behaviors:</p>
+        <div class="persona-grid">
+          <div class="persona-card">
+            <div class="persona-avatar">L</div>
+            <div class="persona-info">
+              <h3>Lina, 20</h3>
+              <blockquote>“I just want somewhere that feels cozy but not always the same place, please.”</blockquote>
+              <p>
+                Loves discovering new spots but gets overwhelmed by too many options. She decides by vibe, not logic—
+                and needs an emotional, visual way to explore.
+              </p>
+            </div>
+          </div>
+          <div class="persona-card">
+            <div class="persona-avatar">D</div>
+            <div class="persona-info">
+              <h3>Darren, 22</h3>
+              <blockquote>“We’ve been talking for 20 minutes and still haven’t picked a place!”</blockquote>
+              <p>
+                Loves hanging out but hates endless group debates that always end up at the same familiar spots
+                just to avoid arguments. He needs a quick, guided way to choose places everyone can agree on.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- 05 Design Principles -->
+      <div class="case-card">
+        <p class="case-step">05</p>
+        <h2>Design principles</h2>
+        <p>From research to requirements—these guided every decision:</p>
+        <div class="guideline-pills">
+          <div class="guideline-pill">
+            <span class="guideline-check">✓</span>
+            <div>
+              <strong>Simple, quick flow</strong>
+              <p>Mood → vibe → radius → 3 recommendations → select → guide. No endless scrolling.</p>
+            </div>
+          </div>
+          <div class="guideline-pill">
+            <span class="guideline-check">✓</span>
+            <div>
+              <strong>Suggests nearby places</strong>
+              <p>Recommendations that fit the chosen criteria and are within reach.</p>
+            </div>
+          </div>
+          <div class="guideline-pill">
+            <span class="guideline-check">✓</span>
+            <div>
+              <strong>Focuses on atmosphere</strong>
+              <p>Discovery by vibe and mood—not fixed categories or rankings.</p>
+            </div>
+          </div>
+          <div class="guideline-pill">
+            <span class="guideline-check">✓</span>
+            <div>
+              <strong>Visually colorful &amp; fun</strong>
+              <p>Makes discovery simple, visual, and enjoyable—not another utility app.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 User Flow -->
+      <div class="case-card">
+        <p class="case-step">06</p>
+        <h2>User flow</h2>
+        <p>A guided path from indecision to “let’s go”:</p>
+
+        <div class="uf-diagram">
+          <div class="uf-node uf-system uf-landing">Landing page</div>
+          <div class="uf-arrow uf-arrow-1">→</div>
+
+          <div class="uf-input uf-input-group">
+            <span class="uf-input-label">User input:</span>
+            <div class="uf-input-pills">
+              <span class="uf-pill">
+                <strong>Mood</strong>
+                <small>sad, happy, bored, angry</small>
+              </span>
+              <span class="uf-pill">
+                <strong>Radius</strong>
+                <small>how far you’ll travel</small>
+              </span>
+              <span class="uf-pill uf-pill-center">
+                <strong>Vibe</strong>
+                <small>cozy, adventure, zen, nature</small>
+              </span>
+            </div>
+          </div>
+
+          <div class="uf-arrow uf-arrow-2">→</div>
+          <div class="uf-node uf-system uf-recs">3 place<br>recommendations</div>
+          <div class="uf-arrow uf-arrow-3">→</div>
+          <div class="uf-node uf-outline uf-select">Select 1 place</div>
+
+          <div class="uf-arrow uf-arrow-down">↓</div>
+
+          <div class="uf-node uf-system uf-guide">Guide to go there</div>
+          <div class="uf-arrow uf-arrow-4">←</div>
+          <div class="uf-node uf-system uf-finish">Finish</div>
+        </div>
+
+        <div class="uf-legend">
+          <span class="uf-legend-item"><span class="uf-dot uf-dot-outline"></span> User Selection Sections</span>
+          <span class="uf-legend-item"><span class="uf-dot uf-dot-filled"></span> Computer / System Process</span>
+        </div>
+      </div>
+
+      <!-- 07 Iterations -->
+      <div class="case-card">
+        <p class="case-step">07</p>
+        <h2>Iterations</h2>
+        <p>Design is never one-and-done. Here’s a key iteration that shaped the experience:</p>
+        <div class="iteration-grid">
+          <div class="iteration-card iteration-before">
+            <span class="iteration-label">Before</span>
+            <p>The mood input used numbers (1–4), but users found it abstract and confusing. They struggled to differentiate the emotions.</p>
+            <div class="iteration-visuals">
+              <div class="case-graphic case-graphic-phone">
+                <img src="MEDIA/MOOD2GO/1%20Design%20iteration%20-%20beforeA.png" alt="Before: numbered mood selector, sad/blue variant (1-4)" />
+              </div>
+              <div class="case-graphic case-graphic-phone">
+                <img src="MEDIA/MOOD2GO/1%20Design%20iteration%20-%20beforeB.png" alt="Before: numbered mood selector, happy/yellow variant (1-4)" />
+              </div>
+            </div>
+          </div>
+          <div class="iteration-card iteration-after">
+            <span class="iteration-label">After</span>
+            <p>Replaced numbers with swipe interactions and clear emotion labels—short descriptions and emotion titles made choices feel intuitive.</p>
+            <div class="iteration-visuals">
+              <div class="case-graphic case-graphic-phone">
+                <img src="MEDIA/MOOD2GO/1%20Design%20iteration%20-%20afterA.png" alt="After: swipeable sad mood card with emotion label" />
+              </div>
+              <div class="case-graphic case-graphic-phone">
+                <img src="MEDIA/MOOD2GO/1%20Design%20iteration%20-%20afterB.png" alt="After: swipeable happy mood card with emotion label" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 Visual Design -->
+      <div class="case-card">
+        <p class="case-step">08</p>
+        <h2>Visual design</h2>
+        <p>Each color in the palette maps to a mood or moment in the flow—so the interface itself communicates feeling:</p>
+        <div class="color-palette">
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#517FBB"></span>
+            <span class="color-label">Sad</span>
+            <span class="color-hex">#517FBB</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#6FB74B"></span>
+            <span class="color-label">Bored</span>
+            <span class="color-hex">#6FB74B</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#F95738"></span>
+            <span class="color-label">Angry</span>
+            <span class="color-hex">#F95738</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#FFCD00"></span>
+            <span class="color-label">Happy</span>
+            <span class="color-hex">#FFCD00</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#EB6ABA"></span>
+            <span class="color-label">Location &amp; distance</span>
+            <span class="color-hex">#EB6ABA</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch" style="background:#8379D9"></span>
+            <span class="color-label">Vibe check</span>
+            <span class="color-hex">#8379D9</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch color-swatch-light" style="background:#ECECD4"></span>
+            <span class="color-label">App background</span>
+            <span class="color-hex">#ECECD4</span>
+          </div>
+          <div class="color-chip">
+            <span class="color-swatch color-swatch-dark" style="background:#000000"></span>
+            <span class="color-label">Text &amp; UI accents</span>
+            <span class="color-hex">#000000</span>
+          </div>
+        </div>
+        <p class="type-note"><strong>Typography:</strong> Poppins — friendly, modern, and legible at every step of the flow.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.2rem;">
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Mood%20Happy%20-%20Yellow.png" alt="Happy mood card, yellow" /></div>
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Mood%20Sad%20-%20Blue.png" alt="Sad mood card, blue" /></div>
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Mood%20Bored%20-%20Green.png" alt="Bored mood card, green" /></div>
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Mood%20Angry%20-%20Red.png" alt="Angry mood card, red" /></div>
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Vibe%20Check%20-%20Purple.png" alt="Vibe check screen, purple" /></div>
+          <div class="case-graphic" style="width: 160px;"><img src="MEDIA/MOOD2GO/Location%20Find%20-%20Pink.png" alt="Location/radius screen, pink" /></div>
+        </div>
+      </div>
+
+      <!-- 09 Design Decisions -->
+      <div class="case-card">
+        <p class="case-step">09</p>
+        <h2>Design decisions</h2>
+        <p>How insights translated into concrete UX choices:</p>
         <div class="decision-list">
           <div class="decision">
             <div class="kicker">Insight → Decision</div>
-            <p><strong>Users choose by vibe, not logic</strong> → we centered the flow around “mood” and “vibe,” not categories or rankings.</p>
+            <p><strong>Users choose by vibe, not logic</strong> → We centered the flow around “mood” and “vibe,” not categories or rankings.</p>
           </div>
           <div class="decision">
-            <div class="kicker">Iteration</div>
-            <p><strong>Numbered mood inputs felt abstract</strong> → replaced with a swipe interaction and clear emotion labels.</p>
+            <div class="kicker">Observation → Decision</div>
+            <p><strong>Numbered mood inputs felt abstract</strong> → Swipe interactions with clear emotion labels and short descriptions.</p>
           </div>
           <div class="decision">
             <div class="kicker">UX principle</div>
-            <p><strong>Keep momentum</strong> → a simple, quick flow from inputs → 3 recommendations → select → guide.</p>
+            <p><strong>Keep momentum</strong> → A simple, quick flow: inputs → 3 recommendations → select → guide. No dead ends.</p>
+          </div>
+          <div class="decision">
+            <div class="kicker">Persona need</div>
+            <p><strong>Darren needs speed; Lina needs feeling</strong> → Fast path for groups, emotional/visual language for solo explorers.</p>
           </div>
         </div>
       </div>
 
-      <div class="case-card">
-        <h2>Results & takeaways</h2>
-        <!-- GRAPHIC: Add results visuals (e.g. before/after, prototype demo) -->
-        <div class="case-graphic">
-          <span class="case-graphic-placeholder">Add graphic (e.g. prototype screenshot, demo)</span>
+      <!-- 10 Results -->
+      <div class="case-card callout-success">
+        <p class="case-step">10</p>
+        <h2>Results &amp; takeaways</h2>
+        <div class="text-media-split reverse">
+          <div class="case-graphic case-graphic-video-portrait lowfi-shot">
+            <video src="MEDIA/VIDEO/MOOD2Go.mov" controls preload="metadata" playsinline></video>
+          </div>
+          <div>
+            <p>
+              After two months of daily calls and late-night debugging, Mood2Go was born from our very first hackathon
+              as a team of mostly beginners. I grew beyond my role as a designer—picking up skills as a product manager
+              and backend contributor: setting deadlines, coordinating meetings, recruiting user testers, and learning
+              new APIs, transitions, and workflows.
+            </p>
+            <p>
+              We delivered a working prototype with coded features, API integration, and a polished UI—about
+              <strong>75% of our design vision</strong> implemented and demoed in the final video pitch.
+            </p>
+            <ul class="case-list">
+              <li><strong>End-to-end execution</strong> — proved we could design, code, and ship under tight constraints.</li>
+              <li><strong>Cross-disciplinary learning</strong> — stretched into both design and technical problem-solving.</li>
+              <li><strong>The power of simplicity</strong> — a straightforward UX turned indecision into excitement during testing.</li>
+            </ul>
+          </div>
         </div>
-        <p>
-          This was our first hackathon as a mostly-beginner team. We shipped a working prototype with coded
-          features, API integration, and a polished UI—around 75% of the design vision implemented and demoed.
-        </p>
-        <ul>
-          <li><strong>End-to-end execution:</strong> designed, built, and shipped under tight constraints.</li>
-          <li><strong>Cross-disciplinary growth:</strong> I supported planning, testing recruitment, and back-end work.</li>
-          <li><strong>Simplicity wins:</strong> fast, guided choices reduced debate and increased excitement during testing.</li>
-        </ul>
       </div>
 
+      <!-- 11 Future -->
       <div class="case-card">
+        <p class="case-step">11</p>
         <h2>Future directions</h2>
-        <ul>
-          <li><strong>Group mode:</strong> collaborative decision-making with friends.</li>
-          <li><strong>Favorites:</strong> save and revisit go-to spots.</li>
-          <li><strong>Memory-based recommendations:</strong> reduce repeats of recently visited places.</li>
-          <li><strong>Expanded categories:</strong> richer moods, vibes, and more nuanced recommendations.</li>
+        <p>This is just the start. If developed further, Mood2Go could expand through:</p>
+        <ul class="case-list">
+          <li><strong>Group mode</strong> — collaborative decision-making with friends.</li>
+          <li><strong>Favorites</strong> — save and revisit go-to spots.</li>
+          <li><strong>Memory-based recommendations</strong> — refrain from suggesting recently visited places.</li>
+          <li><strong>Expanded categories</strong> — more moods, more nuanced vibes, and richer recommendations.</li>
         </ul>
       </div>
 
       <div class="case-card">
         <h2>More projects</h2>
-        <p>
-          Next: <a class="inline-link" href="academe.html">ACADEME</a> and <a class="inline-link" href="sikkut.html">SIKKUT</a>.
-        </p>
+        <div class="next-projects">
+          <a class="next-project-card" href="sikkut.html">
+            <span class="next-project-label">02 • Platform Design</span>
+            <span class="next-project-title">SIKKUT</span>
+            <span class="next-project-blurb">A unified portal that integrates wellness programs under one navigation system and consistent UI.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+          <a class="next-project-card" href="carering.html">
+            <span class="next-project-label">03 • AI Product Design</span>
+            <span class="next-project-title">CARERING</span>
+            <span class="next-project-blurb">An AI eldercare companion that places daily check-in calls and alerts family if something seems off.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+        </div>
       </div>
+
     </section>
   </main>
 
   <footer>
-    <p>© 2024 Renata Rusly — Designed with curiosity, color, and care.</p>
+    <p>© 2026 Renata Rusly — Designed with curiosity, color, and care.</p>
   </footer>
 
   <script src="script.js"></script>

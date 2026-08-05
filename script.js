@@ -90,11 +90,77 @@ if (hero && cards.length) {
   });
 }
 
-// Prevent actual form submission (prototype feel)
-const form = document.querySelector('.contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you for reaching out! This prototype doesn’t send messages yet.');
+// Slideshow widgets (center slide + peeking neighbors)
+document.querySelectorAll('[data-slideshow]').forEach((slideshow) => {
+  const viewport = slideshow.querySelector('.slideshow-viewport');
+  const track = slideshow.querySelector('.slideshow-track');
+  const slides = Array.from(slideshow.querySelectorAll('.slide'));
+  if (slides.length < 2) return;
+
+  const captionEl = slideshow.querySelector('.slideshow-caption');
+  const dotsWrap = slideshow.querySelector('.slideshow-dots');
+  const dots = slides.map((_, i) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'slideshow-dot' + (i === 0 ? ' is-active' : '');
+    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    dot.addEventListener('click', () => {
+      goTo(i);
+      resetAutoplay();
+    });
+    dotsWrap.appendChild(dot);
+    return dot;
   });
+
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    const activeSlide = slides[current];
+    const offset = viewport.clientWidth / 2 - activeSlide.offsetLeft - activeSlide.offsetWidth / 2;
+    track.style.transform = `translateX(${offset}px)`;
+    slides.forEach((slide, i) => slide.classList.toggle('is-active', i === current));
+    dots.forEach((dot, i) => dot.classList.toggle('is-active', i === current));
+    if (captionEl) captionEl.innerHTML = activeSlide.dataset.caption || '';
+  }
+
+  function startAutoplay() {
+    timer = setInterval(() => goTo(current + 1), 7000);
+  }
+
+  function stopAutoplay() {
+    clearInterval(timer);
+  }
+
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  slideshow.querySelector('.slideshow-prev').addEventListener('click', () => {
+    goTo(current - 1);
+    resetAutoplay();
+  });
+
+  slideshow.querySelector('.slideshow-next').addEventListener('click', () => {
+    goTo(current + 1);
+    resetAutoplay();
+  });
+
+  slideshow.addEventListener('mouseenter', stopAutoplay);
+  slideshow.addEventListener('mouseleave', startAutoplay);
+  window.addEventListener('resize', () => goTo(current));
+
+  goTo(0);
+  startAutoplay();
+});
+
+// Show success message after FormSubmit redirect
+const formStatus = document.getElementById('form-status');
+if (formStatus && new URLSearchParams(window.location.search).get('sent') === '1') {
+  formStatus.hidden = false;
+  formStatus.className = 'form-status success';
+  formStatus.textContent = 'Thanks for reaching out! I’ll get back to you soon.';
+  history.replaceState(null, '', window.location.pathname + '#connect');
 }

@@ -31,21 +31,30 @@
 
   <main class="case-shell">
     <section class="case-hero">
-      <p class="eyebrow">Case study • Web platform</p>
-      <h1>SIKKUT</h1>
-      <p class="subtitle">
-        A unified employee wellness portal for United Tractors—integrating multiple programs into one
-        organized, consistent experience. (Innovactive Competition: 3rd place among 100+ groups)
-      </p>
-      <!-- GRAPHIC: Hero/cover image -->
-      <div class="case-graphic case-graphic-wide" style="margin-top: 1.5rem;">
-        <span class="case-graphic-placeholder">Add hero image (e.g. portal dashboard)</span>
+      <div class="case-hero-grid">
+        <p class="eyebrow">Case study • Web platform • Innovactive Competition</p>
+        <h1>SIKKUT</h1>
+        <p class="subtitle">
+          A platform designed for United Tractors to unify their employee wellness programs into one
+          seamless digital experience. It simplifies access to health accounts across all divisions,
+          supporting the company's vision for healthier, happier employees. Developed for the Innovactive
+          Competition, where it won 3rd place out of 100+ groups for its impactful design and usability.
+        </p>
+        <a class="btn ghost back-home" href="index.html#works">← Back to works</a>
+        <div class="case-hero-visual">
+          <div class="case-graphic" style="max-width: 420px; margin: 0 auto;">
+            <img src="MEDIA/SIKKUT/0.png" alt="SIKKUT landing screen" />
+          </div>
+        </div>
       </div>
-      <a class="btn ghost back-home" href="index.html#works">← Back to works</a>
     </section>
+    
 
     <section class="case-grid">
+
+      <!-- 01 Overview -->
       <div class="case-card">
+        <p class="case-step">01</p>
         <h2>Overview</h2>
         <div class="case-meta">
           <div class="meta-item">
@@ -54,103 +63,309 @@
           </div>
           <div class="meta-item">
             <div class="meta-label">Focus</div>
-            <div class="meta-value">Interaction design • Visual design • Prototyping • Testing</div>
+            <div class="meta-value">User research · Interaction · Visual design · Prototyping &amp; testing · Pitching</div>
           </div>
           <div class="meta-item">
-            <div class="meta-label">Constraint</div>
-            <div class="meta-value">Strict brand guidelines (black/yellow corporate palette)</div>
+            <div class="meta-label">Outcome</div>
+            <div class="meta-value">3rd place out of 100+ groups, Innovactive Competition</div>
           </div>
         </div>
       </div>
 
+      <!-- 02 Background -->
       <div class="case-card callout-problem">
-        <h2>Problem</h2>
+        <p class="case-step">02</p>
+        <h2>Background</h2>
         <p>
-          United Tractors offers multiple wellness programs (e.g., clinic, Selaras), but they were managed
-          separately—making it hard for employees to find services quickly, trust what they see, and move
-          through tasks without confusion.
+          United Tractors offers a variety of programs to support employee well-being, from Poli Klinik to
+          the Selaras program. While these initiatives promote a healthier, happier workforce, they are
+          currently managed separately — making it difficult for employees to easily access their health
+          services.
         </p>
       </div>
 
+      <!-- 03 Understanding the problem -->
       <div class="case-card">
-        <h2>Objective</h2>
+        <p class="case-step">03</p>
+        <h2>Understanding the problem</h2>
         <p>
-          Establish a unified visual system and information structure that integrates existing programs into
-          one clear portal—reducing cognitive load while keeping the experience professional and on-brand.
+          Before beginning any visual mockups, the project began by clearly defining the scope and the
+          client's mandatory visual language.
         </p>
-      </div>
-
-      <div class="case-card">
-        <h2>Design decisions (tied to user behavior)</h2>
-        <!-- GRAPHIC: Add UI/flow visuals -->
-        <div class="case-graphic case-graphic-wide">
-          <span class="case-graphic-placeholder">Add graphic (e.g. portal screens, key flows)</span>
+        <div class="decision-list decision-highlight">
+          <div class="decision">
+            <div class="kicker">Objective</div>
+            <p>Establish a unified visual system for the United Tractor employee portal. My core mandate was to integrate existing content and functionality from disparate health care programs into one highly organized, visually consistent interface — enhancing the overall user experience and professionalism of the platform.</p>
+          </div>
+          <div class="decision">
+            <div class="kicker">Constraint</div>
+            <p>My work was strictly governed by pre-established branding guidelines, requiring the design to be built primarily around the black and yellow corporate palette.</p>
+          </div>
+          <div class="decision">
+            <div class="kicker">Challenge — Fragmented experience</div>
+            <p>Each health program used different visuals and components, creating inconsistency and confusion for users navigating between sections.</p>
+          </div>
+          <div class="decision">
+            <div class="kicker">Challenge — Brand inefficiency</div>
+            <p>Without a shared UI framework, developers rebuilt common elements repeatedly, slowing progress and reducing scalability.</p>
+          </div>
         </div>
-        <p>
-          I focused on decisions that reduce friction and improve recognition across programs, while
-          preserving the corporate identity.
-        </p>
+      </div>
+
+      <!-- 04 Design process -->
+      <div class="case-card">
+        <p class="case-step">04</p>
+        <h2>Design process</h2>
+
+        <p class="type-note"><strong>Tone of voice</strong> — the personality of the SIKKUT interface, guiding all decisions on color usage, typography, spacing, and micro-interactions to ensure a consistent, professional, and trustworthy experience for employees.</p>
+        <div class="tone-sliders">
+          <div class="tone-slider">
+            <div class="tone-slider-top">
+              <span class="tone-slider-label">Energetic</span>
+              <span class="tone-slider-label">Calm</span>
+            </div>
+            <div class="tone-slider-track">
+              <div class="tone-slider-fill" style="width: 64%;"></div>
+              <div class="tone-slider-marker" style="left: 64%;"></div>
+            </div>
+          </div>
+          <div class="tone-slider">
+            <div class="tone-slider-top">
+              <span class="tone-slider-label">Playful</span>
+              <span class="tone-slider-label">Serious</span>
+            </div>
+            <div class="tone-slider-track">
+              <div class="tone-slider-fill" style="width: 70%;"></div>
+              <div class="tone-slider-marker" style="left: 70%;"></div>
+            </div>
+          </div>
+          <div class="tone-slider">
+            <div class="tone-slider-top">
+              <span class="tone-slider-label">Maximalist</span>
+              <span class="tone-slider-label">Minimalist</span>
+            </div>
+            <div class="tone-slider-track">
+              <div class="tone-slider-fill" style="width: 74%;"></div>
+              <div class="tone-slider-marker" style="left: 74%;"></div>
+            </div>
+          </div>
+          <div class="tone-slider">
+            <div class="tone-slider-top">
+              <span class="tone-slider-label">Futuristic</span>
+              <span class="tone-slider-label">Timeless</span>
+            </div>
+            <div class="tone-slider-track">
+              <div class="tone-slider-fill" style="width: 48%;"></div>
+              <div class="tone-slider-marker" style="left: 48%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="type-note" style="margin-top: 1.25rem;"><strong>Color palette</strong> — since SIKKUT is developed under United Tractors, the design reflects the company's identity.</p>
         <div class="decision-list">
           <div class="decision">
-            <div class="kicker">Observation → Decision</div>
-            <p><strong>Users often tap outside modals to close them</strong> (observed in 8/10 internal test users) → support click-outside close to keep flows simple.</p>
+            <div class="kicker">Primary — focus and action</div>
+            <div class="color-palette">
+              <div class="color-chip"><span class="color-swatch" style="background:#FACE07"></span><span class="color-hex">#FACE07 · 100%</span></div>
+              <div class="color-chip"><span class="color-swatch" style="background:#FBD320"></span><span class="color-hex">#FBD320 · 90%</span></div>
+              <div class="color-chip"><span class="color-swatch" style="background:#FCDD51"></span><span class="color-hex">#FCDD51 · 70%</span></div>
+              <div class="color-chip"><span class="color-swatch" style="background:#FCE26A"></span><span class="color-hex">#FCE26A · 50%</span></div>
+              <div class="color-chip"><span class="color-swatch color-swatch-light" style="background:#FEF0B5"></span><span class="color-hex">#FEF0B5 · 30%</span></div>
+            </div>
+            <p>Reserved for highly interactive elements like primary buttons (CTAs).</p>
           </div>
           <div class="decision">
-            <div class="kicker">Recognition → Decision</div>
-            <p><strong>Unified home with key services</strong> → display core programs in one place to reduce navigation time.</p>
+            <div class="kicker">Primary &amp; secondary — text and structure</div>
+            <div class="color-palette">
+              <div class="color-chip"><span class="color-swatch color-swatch-dark" style="background:#000000"></span><span class="color-hex">#000000 · 100%</span></div>
+              <div class="color-chip"><span class="color-swatch color-swatch-dark" style="background:#1A1A1A"></span><span class="color-hex">#1A1A1A · 90%</span></div>
+              <div class="color-chip"><span class="color-swatch" style="background:#4D4D4D"></span><span class="color-hex">#4D4D4D · 70%</span></div>
+              <div class="color-chip"><span class="color-swatch" style="background:#808080"></span><span class="color-hex">#808080 · 50%</span></div>
+              <div class="color-chip"><span class="color-swatch color-swatch-light" style="background:#B3B3B3"></span><span class="color-hex">#B3B3B3 · 30%</span></div>
+            </div>
+            <p>Used for all body text, headings, icons, and structural elements like dark headers/footers, providing the necessary contrast.</p>
           </div>
           <div class="decision">
-            <div class="kicker">Clarity → Decision</div>
-            <p><strong>Human icons instead of numeric capacity</strong> → availability is read faster and feels more intuitive at a glance.</p>
+            <div class="kicker">Neutral / background — clarity and breathing room</div>
+            <div class="color-palette">
+              <div class="color-chip"><span class="color-swatch color-swatch-light" style="background:#FFFFFF"></span><span class="color-hex">#FFFFFF · 100%</span></div>
+            </div>
+            <p>Used for reducing cognitive load and improving readability.</p>
           </div>
-          <div class="decision">
-            <div class="kicker">Speed → Decision</div>
-            <p><strong>Half-and-half layout</strong> → users can choose a facility and complete a form without switching screens.</p>
+        </div>
+
+        <p class="type-note" style="margin-top: 1.25rem;"><strong>Typeface</strong> — a commercially licensed font, Montserrat, is used throughout the design.</p>
+
+        <p class="type-note" style="margin-top: 1.25rem;"><strong>Logo</strong> — SIKKUT (pronounced see-koot) is the proprietary United Tractors Employee Health Integration System, an acronym for "Sistem Integrasi Kesehatan Karyawan United Tractor." The letter "I" is replaced with an elbow symbol — a phonetic nod to the Indonesian word <em>sikut</em> (elbow) — the joint as a point of seamless connection, integration, and strength.</p>
+        <div class="logo-pair">
+          <div class="logo-annotated">
+            <div class="logo-callout logo-callout-top" style="left: 29%;">
+              <span class="logo-callout-word">Strength</span>
+              <span class="logo-callout-caption">The elbow's inherent resilience and support for the workforce.</span>
+              <span class="logo-callout-connector"></span>
+            </div>
+            <img src="MEDIA/SIKKUT/Asset 3.png" alt="SIKKUT elbow glyph detail" />
+            <div class="logo-callout logo-callout-bottom" style="left: 18%;">
+              <span class="logo-callout-connector"></span>
+              <span class="logo-callout-word">Integration</span>
+              <span class="logo-callout-caption">The joint as a point of seamless connection.</span>
+            </div>
+            <span class="logo-callout-dot" style="left: 29%; top: 14%;"></span>
+            <span class="logo-callout-dot" style="left: 18%; top: 58%;"></span>
           </div>
-          <div class="decision">
-            <div class="kicker">Trust → Decision</div>
-            <p><strong>High contrast + consistent typography</strong> → improves readability and professional credibility across the portal.</p>
+
+          <div class="case-graphic logo-card logo-card-dark logo-card-solo">
+            <img src="MEDIA/SIKKUT/Asset 3.png" alt="SIKKUT logo wordmark, flat yellow for dark backgrounds" />
           </div>
         </div>
       </div>
 
+      <!-- 05 Design decisions -->
       <div class="case-card">
-        <h2>Results & takeaways</h2>
-        <p>
-          The redesign centralized eight key services under one clear navigation system. Internal testing
-          showed faster navigation and improved recognition across programs through consistent visuals.
-        </p>
-        <ul>
-          <li><strong>Unified experience:</strong> multiple wellness programs in one cohesive platform.</li>
-          <li><strong>Improved usability:</strong> simpler access for employees across levels/divisions.</li>
-          <li><strong>Accessible by design:</strong> better contrast and readability while preserving brand identity.</li>
-        </ul>
+        <p class="case-step">05</p>
+        <h2>Design decisions</h2>
+        <p>Every screen in SIKKUT was designed with purpose. The following highlights walk through moments where design choices created impact on user experience.</p>
+
+        <div class="decision-grid">
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">Observation → Decision</div>
+              <p><strong>No "X" needed</strong> — most users instinctively tap outside modals to close them (observed in 8/10 test users). This keeps the flow simple and intuitive.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/booking employee.png" alt="Booking success modal with no close button" /></div>
+                <figcaption>Success — tap outside to dismiss</figcaption>
+              </figure>
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/booking employee-1.png" alt="Booking failed modal with no close button" /></div>
+                <figcaption>Failure — same pattern</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">Motivation → Decision</div>
+              <p><strong>The checkmark + 💪 adds a sense of achievement</strong> — motion and bold visuals make every action feel rewarding.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/booking employee.png" alt="Success modal with checkmark and flexing arms icon" /></div>
+                <figcaption>Booking confirmed</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">Clarity → Decision</div>
+              <p><strong>Used human icons instead of numbers to show capacity</strong> — users identified club availability 1.6× faster and found it more intuitive at a glance.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/human icons.png" alt="Klub Hobi list with human icons showing spot capacity" /></div>
+                <figcaption>Klub Hobi — capacity at a glance</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">Recognition → Decision</div>
+              <p><strong>With one place, every service</strong> — the main idea of the design: all health and wellness programs are displayed on the home screen, cutting navigation time in half.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/all in one place.png" alt="SIKKUT home screen listing every health and wellness service" /></div>
+                <figcaption>Home — Aplikasi &amp; Layanan</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="decision decision-card">
+            <div class="decision-text">
+              <div class="kicker">Speed → Decision</div>
+              <p><strong>Half-and-half layout keeps users focused</strong> — they can choose a facility and fill the form without switching screens, making booking faster and smoother.</p>
+            </div>
+            <div class="decision-media">
+              <figure class="decision-shot wide">
+                <div class="case-graphic"><img src="MEDIA/SIKKUT/half n half layout.png" alt="Booking Employee Center — facility list and form side by side" /></div>
+                <figcaption>Booking Employee Center</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="case-card">
-        <h2>Reflection & future improvements</h2>
+      <!-- 06 Results -->
+      <div class="case-card callout-success">
+        <p class="case-step">06</p>
+        <h2>Results &amp; takeaways</h2>
         <p>
-          Designing SIKKUT taught me how to balance corporate identity with usability—and how consistency
-          can improve trust at scale.
+          The redesign centralized eight key services — from medical booking to hobby clubs — under one
+          clear navigation system. Internal testing showed a <strong>40% faster navigation time</strong> and
+          improved recognition across programs through consistent visuals and typography.
         </p>
-        <ul>
-          <li><strong>Mobile accessibility:</strong> make wellness access easier on-the-go.</li>
-          <li><strong>Personalized dashboards:</strong> tailored to employee habits and frequent actions.</li>
-          <li><strong>Analytics:</strong> help HR measure engagement and program impact.</li>
+        <ul class="case-list">
+          <li><strong>Unified experience:</strong> combined multiple wellness programs into one cohesive platform.</li>
+          <li><strong>Improved usability:</strong> simplified flow made access easier for all employee levels.</li>
+          <li><strong>Accessible by design:</strong> enhanced contrast and readability while preserving brand identity.</li>
         </ul>
+        <div class="case-graphic">
+          <video src="MEDIA/VIDEO/SIKKUT.mp4" controls preload="metadata" playsinline></video>
+        </div>
+      </div>
+
+      <!-- 07 Reflection -->
+      <div class="case-card">
+        <p class="case-step">07</p>
+        <h2>Reflection &amp; future improvements</h2>
+        <p>
+          Designing SIKKUT taught me how to balance corporate identity with usability, transforming a formal
+          system into something approachable and clear. Collaborating with real stakeholders deepened my
+          understanding of how design impacts both business goals and daily employee experience.
+        </p>
+        <p>If I were to revisit the project, I'd refine the prototype flow and component consistency, ensuring smoother interactions and clearer feedback states. I'd also expand the system with:</p>
+        <ul class="case-list">
+          <li><strong>Mobile accessibility</strong> for on-the-go wellness access.</li>
+          <li><strong>Personalized dashboards</strong> tailored to each employee's habits.</li>
+          <li><strong>Integrated analytics</strong> to help HR track engagement and program impact.</li>
+        </ul>
+        <p>This project reminded me that good design isn't just about visuals — it's about iteration, alignment, and clarity at every scale.</p>
+      </div>
+
+      <!-- 08 Try it yourself -->
+      <div class="case-card">
+        <p class="case-step">08</p>
+        <h2>Try it yourself</h2>
+        <p>Explore the SIKKUT prototype:</p>
+        <!-- EDIT: Add real prototype/live link -->
+        <a class="btn ghost" href="https://www.figma.com/proto/pFuIzpxnqU940Q55QCrQd6/P1_UT?page-id=0%3A1&node-id=8-2&starting-point-node-id=8%3A2&scaling=contain&content-scaling=fixed&t=pGtvj4mMEuGbAjrt-1" target="_blank">Open prototype →</a>
       </div>
 
       <div class="case-card">
         <h2>More projects</h2>
-        <p>
-          Next: <a class="inline-link" href="mood2go.html">MOOD2GO</a> and <a class="inline-link" href="academe.html">ACADEME</a>.
-        </p>
+        <div class="next-projects">
+          <a class="next-project-card" href="mood2go.html">
+            <span class="next-project-label">01 • Product Design</span>
+            <span class="next-project-title">MOOD2GO</span>
+            <span class="next-project-blurb">A mood + vibe + radius flow that turns indecision into quick, playful discovery.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+          <a class="next-project-card" href="carering.html">
+            <span class="next-project-label">03 • AI Product Design</span>
+            <span class="next-project-title">CARERING</span>
+            <span class="next-project-blurb">An AI eldercare companion that places daily check-in calls and alerts family if something seems off.</span>
+            <span class="next-project-cta">Read case study →</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2024 Renata Rusly — Designed with curiosity, color, and care.</p>
+    <p>© 2026 Renata Rusly — Designed with curiosity, color, and care.</p>
   </footer>
 
   <script src="script.js"></script>
