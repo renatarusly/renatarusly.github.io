@@ -1068,7 +1068,7 @@ footer {
 .case-grid {
   padding: 0 8vw 110px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.1rem;
 }
 
@@ -1706,7 +1706,7 @@ footer {
 
 .iteration-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -2336,7 +2336,7 @@ footer {
 
 @media (max-width: 960px) {
   .case-meta {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .persona-grid,
@@ -2345,7 +2345,7 @@ footer {
   .text-media-split,
   .text-media-split.reverse,
   .research-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   /* Screen-frame comparisons (before/after phone mockups) stay side by side
@@ -2353,6 +2353,11 @@ footer {
   .iteration-grid {
     gap: 0.6rem;
   }
+  .case-hero-grid {
+    display: block;
+    gap: 20px;
+  }
+  
 
   .decision-card {
     flex-direction: column;
@@ -2398,4 +2403,59 @@ footer {
   .uf-pill-center {
     grid-column: span 1;
   }
+}
+
+/* Before/After tap-to-toggle — phone view only.
+   Desktop/tablet keep the normal side-by-side comparison untouched. */
+@media (max-width: 640px) {
+  .iteration-grid {
+    grid-template-columns: minmax(0, 1fr);
+    position: relative;
+  }
+
+  .iteration-grid.is-tappable .iteration-card {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .iteration-grid.is-tappable .iteration-after {
+    display: none;
+  }
+
+  .iteration-grid.is-tappable.is-flipped .iteration-before {
+    display: none;
+  }
+
+  .iteration-grid.is-tappable.is-flipped .iteration-after {
+    display: block;
+    animation: iterationSwap 0.35s ease both;
+  }
+
+  .iteration-grid.is-tappable:not(.is-flipped) .iteration-before {
+    animation: iterationSwap 0.35s ease both;
+  }
+
+  .iteration-tap-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.85rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--orange);
+    animation: tapHintPulse 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes iterationSwap {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes tapHintPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
 }

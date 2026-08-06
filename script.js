@@ -164,3 +164,40 @@ if (formStatus && new URLSearchParams(window.location.search).get('sent') === '1
   formStatus.textContent = 'Thanks for reaching out! I’ll get back to you soon.';
   history.replaceState(null, '', window.location.pathname + '#connect');
 }
+
+// Before/After tap-to-toggle (phone view only)
+// Applies to every .iteration-grid found on the page (mood2go, carering, etc.)
+document.querySelectorAll('.iteration-grid').forEach((grid) => {
+  const before = grid.querySelector('.iteration-before');
+  const after = grid.querySelector('.iteration-after');
+  if (!before || !after) return;
+
+  grid.classList.add('is-tappable');
+
+  const beforeHint = document.createElement('span');
+  beforeHint.className = 'iteration-tap-hint';
+  beforeHint.textContent = 'Tap to see after →';
+  before.appendChild(beforeHint);
+
+  const afterHint = document.createElement('span');
+  afterHint.className = 'iteration-tap-hint';
+  afterHint.textContent = '← Tap to see before';
+  after.appendChild(afterHint);
+
+  const isPhoneView = () => window.matchMedia('(max-width: 640px)').matches;
+
+  const toggle = (e) => {
+    if (!isPhoneView()) return;
+    // Don't toggle when tapping a link/button inside the card, if any.
+    if (e.target.closest('a, button')) return;
+    grid.classList.toggle('is-flipped');
+  };
+
+  before.addEventListener('click', toggle);
+  after.addEventListener('click', toggle);
+
+  // If the viewport grows past phone width, reset to the default (before) state.
+  window.addEventListener('resize', () => {
+    if (!isPhoneView()) grid.classList.remove('is-flipped');
+  });
+});
